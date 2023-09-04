@@ -11,35 +11,35 @@ output: html_document
  
  </br>
  
-### VALIDA TUS DATOS (6 horas)
+### VALIDA TUS DATOS
 
-    • Introducción a la calidad de la información
-    • Fuentes de información.
-    • Variables cualitativas y cuantitativas
-    • Identificación de errores y sesgos en la información
+* Introducción a la calidad de la información
+* Fuentes de información.
+* Variables cualitativas y cuantitativas
+* Identificación de errores y sesgos en la información
     
-### CONTROL INTERNO (18 horas)
+### CONTROL INTERNO
 
-    • Conceptos básicos: indicadores de posición, centro, dispersión y forma
-    • La media muestral, la proporción muestral y la varianza muestral.
-    •  modelos binomiales, poisson y normal.  
-    • Introducción al control de calidad
-    • Gráficos e indicadores de control de calidad. 
-    • Control interno.  Cartas de control, Reglas de control 
-    • Análisis de Ensayos de Aptitud y Z-Score
-    • Control interno y Seguimiento de Tendencias
-    • Análisis de control binario y T2 de Hotelling
+* Conceptos básicos: indicadores de posición, centro, dispersión y forma
+* La media muestral, la proporción muestral y la varianza muestral.
+* modelos binomiales, poisson y normal.  
+* Introducción al control de calidad
+* Gráficos e indicadores de control de calidad. 
+* Control interno.  Cartas de control, Reglas de control 
+* Análisis de Ensayos de Aptitud y Z-Score
+* Control interno y Seguimiento de Tendencias
+* Análisis de control binario y T2 de Hotelling
   
-### GENERALIZA LOS RESULTADOS (14 horas)
+### GENERALIZA LOS RESULTADOS 
 
-    • Estimación puntual y por intervalos de confianza
-    •  Pruebas de hipótesis. Conceptos, error tipo I, tipo II y potencia de las pruebas de hipótesis. Pruebas paramétricas y no paramétricas. 
-    • Evaluación de la significancia estadística
+* Estimación puntual y por intervalos de confianza
+* Pruebas de hipótesis. Conceptos, error tipo I, tipo II y potencia de las pruebas de hipótesis. Pruebas paramétricas y no paramétricas. 
+* Evaluación de la significancia estadística
 
-### INTERPRETA Y PRESENTA TUS RESULTADOS (6 horas)
+### INTERPRETA Y PRESENTA TUS RESULTADOS
 
-    • Análisis y discusión de resultados científicos
-    • Aplicación de los Conceptos a Casos prácticos
+* Análisis y discusión de resultados científicos
+* Aplicación de los Conceptos a Casos prácticos
 
 total 44 horas
 
