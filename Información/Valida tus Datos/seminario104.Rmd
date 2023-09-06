@@ -1,0 +1,36 @@
+---
+title: "seminario104"
+author: "Felipe Palomino"
+date: "2023-08-24"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+</br></br>
+
+## **Identificación de errores y sesgos en la información**
+
+La identificación de errores y sesgos en la información es una habilidad crítica en el mundo actual, donde estamos inundados de datos y fuentes de información. Ya sea en la investigación académica, la toma de decisiones empresariales o la vida cotidiana, la capacidad de reconocer y abordar errores y sesgos es esencial para garantizar la precisión y la confiabilidad de la información que consumimos y utilizamos.
+<div>
+Tipos de errores en la información:
+<div>
+Errores de recopilación de datos: Estos ocurren durante la fase de adquisición de datos, como la entrada incorrecta de datos, la omisión de valores, o la falta de representatividad de la muestra. Identificar estos errores requiere una verificación cuidadosa de la fuente y de la metodología utilizada para recopilar los datos.
+<div>
+Errores de medición: Pueden surgir debido a instrumentos de medición defectuosos, calibración inadecuada o problemas en la técnica de medición. Detectar estos errores implica una evaluación rigurosa de la precisión y la exactitud de los instrumentos utilizados.
+<div>
+Errores de procesamiento de datos: Se relacionan con errores en cálculos, transformaciones de datos incorrectas o problemas en el software utilizado para analizar los datos. La revisión minuciosa de los procedimientos de procesamiento y análisis de datos es esencial para identificarlos.
+<div>
+Tipos de sesgos en la información:
+<div>
+Sesgo de selección: Ocurre cuando los datos se recopilan de manera que no son representativos de la población o el fenómeno en estudio. Puede surgir, por ejemplo, si se excluyen ciertos grupos demográficos en una encuesta.
+<div>
+Sesgo de muestreo: Relacionado con la selección de una muestra que no es aleatoria o que tiene sesgos inherentes. Puede llevar a conclusiones erróneas sobre una población más amplia.
+<div>
+Sesgo de confirmación: Es la tendencia a buscar, interpretar y recordar la información de una manera que confirme nuestras creencias preexistentes, ignorando evidencia contraria. Este sesgo puede influir en la forma en que analizamos datos y tomamos decisiones.
+<div>
+Sesgo de recuerdo: Se refiere a la distorsión de la memoria que puede llevar a una representación inexacta de eventos pasados. Esto puede afectar la precisión de los datos retrospectivos.
+<div>
+Sesgo de publicación: Implica la tendencia de las fuentes de información a informar o publicar selectivamente resultados que son más llamativos o positivos, dejando de lado información menos favorable o negativa.
+<div>
+La identificación de errores y sesgos requiere un enfoque crítico y cuidadoso en la evaluación de datos e información. En el curso que planeas impartir, es importante enseñar a los participantes técnicas y estrategias para reconocer y mitigar estos problemas, promoviendo así la toma de decisiones basada en información precisa y objetiva. La aplicación de principios de integridad y rigor en la investigación y el análisis de datos es esencial en un mundo cada vez más impulsado por la información.

@@ -1,0 +1,12 @@
+---
+title: "seminario102"
+author: "Felipe Palomino"
+date: "2023-08-24"
+output: html_document
+---
+
+</br></br>
+
+## **Fuentes de información**
+
+Las fuentes de información son fundamentales en la investigación y análisis en diversos campos de investigación y laborales, ya que proporcionan la base de conocimiento necesaria para llevar a cabo experimentos con precisión y seguridad. La elección y utilización adecuada de fuentes confiables, como la literatura científica, bases de datos especializadas y recursos en línea, enriquece el conocimiento científico y garantiza la seguridad de los procesos químicos. Además, respalda el cumplimiento normativo y respalda la toma de decisiones informadas en este entorno altamente especializado. En este curso, exploraremos la importancia de seleccionar, evaluar y utilizar fuentes de información de manera crítica y efectiva para impulsar la excelencia científica y el éxito profesional en este campo.

@@ -1,0 +1,32 @@
+---
+title: "seminario103"
+author: "Felipe Palomino"
+date: "2023-08-24"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+</br></br>
+
+## **Variables aleatorias**
+
+Un proceso fundamental para entender y comprender los diferentes procesos que se encuentran en nuestro entorno es la identificación del tipo de variable con la que estamos trabajando, puesto que con base en esta debemos realizar todo nuestro proceso de análisis, tomas de decisiones, gráficos, etc.
+<div>
+En general existen dos grandes grupos de tipos de variables: **cuantitativas y cualitativas**.
+<div>
+# **Variables cualitativas **
+Son todas las variables que hacen enfásis a cualidades, descripciones o representación de grupos, clases y/o individuos, que aunque pueden tener una representación númerica ( Estrato socioecónnomico: 1,2,3,4,5,6) no hacen enfásis a un número operable sino a una descripción. Estas variables cuentan con dos tipos:
+<div>
+**Nominales** Son todas las variables que no estan sujetas a un orden. Ejemplo: Color de cabello, nombres de las personas, etc.
+<div>
+**Ordinales** Son todas las variables relacionadas con una jerarquía. Ejemplo: Estrato socioenómico, percepción de satisfacción de un producto, las mediciones realizadas en escala likert, etc.
+<div>
+# **Variables cuantitativas **
+Son todas las variables que tienen una representación númerica, se expresan en términos de números y se utilizan para medir magnitudes. Estás presentan dos tipos principales, **discretas y continuas**
+<div>
+**Discretas**:Estas variables solo pueden tomar valores específicos y generalmente son valores enteros. Tienen límites discretos entre los valores posibles. Ejemplos de variables cuantitativas discretas incluyen el número de hijos en una familia, la cantidad de automóviles en un estacionamiento, la cantidad de veces que ocurre un evento (por ejemplo, el número de clientes en una tienda durante una hora específica).
+<div>
+**Continuas**:Estas variables pueden tomar cualquier valor dentro de un rango específico y pueden ser fraccionales. No tienen límites discretos. Ejemplos de variables cuantitativas continuas incluyen la altura, el peso, la temperatura, la velocidad, el ingreso anual y otros valores que pueden variar de manera continua.
+<div>
+Estas también presentan una escala de medición las cuáles son de Razón  e Intervalo, en la escala de razón el valor de 0 indica la ausencia del atributo, y nos permite hacer comparaciones, como por ejemplo la cantilidad de ml de una botella de un refresco. A diferencia de las variables de intervalo dónde este 0 no indica la ausencia del atributo como lo puede ser la temperatura, dónde 0 grados centigrados indican una temperatura fría mas no la ausencia de esta percepción.
