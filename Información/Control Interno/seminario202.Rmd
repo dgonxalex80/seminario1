@@ -1,0 +1,66 @@
+---
+title: "seminario202"
+author: "Felipe Palomino"
+date: "2023-08-24"
+output: html_document
+---
+
+</br></br>
+
+## **Medidas de posición, centro, dispersión y forma**
+Al contar con una variable en general es necesario obtener medidas que nos puedan resumir de una sintetizada la información obtenida en ella. Una alternativa que nos brinda la estadística descriptiva son las medidas de posición, centro, dispersión y forma.
+<div>
+Antes de empezar a definir cada concepto pensemos inicialmente en una variable para identificar cada una de ellas.Supongamos que un laboratorio químico está analizando la concentración de un compuesto en muestras de agua tomadas de diferentes fuentes naturales. Se han recopilado los siguientes datos de concentraciones (en mg/L) para 15 muestras de agua:
+<div>
+35, 42, 50, 55, 58, 62, 65, 70, 75, 80, 85, 90, 95, 98, 100
+```{r}
+#Inializaremos estos datos en R, para trabajar con ellos:
+Cocentracion<-c(35, 42, 50, 55, 58, 62, 65, 70, 75, 80, 85, 90, 95, 98, 100)
+#Gráfiquemos un histograma de estos mismos
+hist(Cocentracion,xlab="Concentracion en Mg/L",ylab="Frecuencia Absoluta",panel.first=grid(),col="white",border="red4",lwd=2,main="")
+#En el camino de este capítulo realizaremos su análisis
+```
+
+**Medidas de posición **
+Las medidas de posición hacen enfásis a una estrcutura de los datos ordenada e identificar cual es el valor que nos describe que hasta ese punto se encuentra el "x"% de valores.Es decir hasta una concentración de 50 Mg/L que porcentaje de valores se encuentran ubicados.También se pueden entender como subdivisiones de los datos, es decir cuales son esos valores que me generan una división en 2,4,100 grupos.
+<div>
+Las medidas de posición más utilizadas son:
+<div>
+**Mediana**:
+<div>
+La mediana es el valor que divide un conjunto de datos en dos partes iguales, de manera que el 50% de los datos están por encima de la mediana y el 50% están por debajo. Para calcularla, primero se ordenan los datos y se encuentra el valor central si el número de datos es impar, o el promedio de los dos valores centrales si el número de datos es par.
+<div>
+**Percentiles**:
+<div>
+
+Los percentiles dividen un conjunto de datos en cien partes iguales. El percentil P representa el valor por debajo del cual se encuentra P% de los datos. Por ejemplo, el percentil 25 (P25) es el valor por debajo del cual se encuentra el 25% de los datos.
+
+**Cuartiles**:
+<div>
+Los cuartiles son percentiles específicos que dividen un conjunto de datos en cuatro partes iguales. Los cuartiles más utilizados son el primer cuartil (Q1, equivalente al percentil 25), el segundo cuartil (Q2, equivalente a la mediana o percentil 50) y el tercer cuartil (Q3, equivalente al percentil 75).
+**Rango intercuartil (RIC)**:
+<div>
+El rango intercuartil es la diferencia entre el tercer cuartil (Q3) y el primer cuartil (Q1). Es una medida de dispersión que indica cuánto se extienden los valores en el rango central del conjunto de datos.
+```{r, message=F,warning=F}
+#Podemos obtener todas estas medidas de una manera sencilla através de las siguientes funciones
+quantile(Cocentracion,c(0.10,0.25,0.5,0.75,0.9)) #Debemos reemplazar como argumento inicial nuestro vector con valores, seguido de los percentiles de interés. En este caso obtenemos el percentil 10, o primer decil, primer cuartil, mediana, tercer cuartil y percentil 90% respectivamente
+#Gráfiquemoslo en el histograma
+hist(Cocentracion,xlab="Concentracion en Mg/L",ylab="Frecuencia Absoluta",panel.first=grid(),col="purple4",lwd=2,main="",ylim=c(0,5))
+Percentiles<-quantile(Cocentracion,c(0.10,0.25,0.5,0.75,0.9))
+abline(v=Percentiles,lwd=2,col=c(1,2,3,4,5))
+legend("topleft",legend=c("10%","25%","50%","75%","90%"),col=c(1,2,3,4,5),
+       lwd=2,cex=0.8)
+
+```
+
+<div>
+**Medidas de tendencia central**
+Las medidas de tendencia central, también conocidas como medidas de centralización, son estadísticas utilizadas para resumir y representar la ubicación central o típica de un conjunto de datos. Estas medidas proporcionan información sobre dónde se agrupan o concentran los valores en un conjunto de datos. Las medidas de tendencia central más comunes son:
+<div>
+**Media Aritmética**: La media aritmética es el promedio de todos los valores en un conjunto de datos. Se calcula sumando todos los valores y dividiendo la suma por el número total de valores. La media se denota como:
+<div>
+$\bar{x}=\frac{\sum_{i}^{n}x_{i}}{n}$
+<div>
+**Mediana**: La mediana es el valor que se encuentra en el punto medio de un conjunto de datos cuando los valores están ordenados de menor a mayor (o viceversa). Si hay un número impar de valores, la mediana es el valor central. Si hay un número par de valores, la mediana es el promedio de los dos valores centrales.
+<div>
+**Moda**: La moda es el valor que aparece con mayor frecuencia en un conjunto de datos. Puede haber una moda (un valor que se repite con más frecuencia) o múltiples modas si varios valores tienen la misma frecuencia máxima.
