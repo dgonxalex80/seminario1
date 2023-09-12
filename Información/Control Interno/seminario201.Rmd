@@ -1,0 +1,78 @@
+---
+title: "seminario201"
+author: "Felipe Palomino"
+date: "2023-08-24"
+output: html_document
+---
+
+</br></br>
+
+## **Conceptos básicos de Estadística Descriptiva**
+La estadística descriptiva es una rama de la estadística que se centra en la recopilación, organización, resumen y presentación de datos de manera que sea más comprensible y significativa. Esta es fundamental en el proceso inicial de cualquier proceso investigativo, académico o laboral, que nos permite conocer inicialmente cual es la situación de nuestra problemática a partir de los datos.
+<div>
+Como se menciona anteriormente el entendimiento del tipo de variable a trabajar es fundamental para realizar cualquier tipo de análisis. De esta manera cada uno de los conceptos que se introducirán en esta sección que se deben indentificar en esta rama de la estadística deben ser enfocados o pensados en este aspecto:
+<div>
+**Frecuencia Absoluta (FA)**:
+La frecuencia absoluta de un valor en un conjunto de datos es simplemente el número de veces que ese valor aparece en el conjunto.
+<div>
+Ejemplo: Supongamos que tenemos el siguiente conjunto de datos representando las edades de un grupo de personas:
+<div>
+25, 30, 25, 35, 40, 25, 30
+<div>
+La frecuencia absoluta de la edad 25 es 3, ya que aparece tres veces en el conjunto.
+
+**Frecuencia Relativa (FR)**:
+
+La frecuencia relativa de un valor es la proporción o el porcentaje del número de veces que aparece ese valor en relación con el tamaño total del conjunto de datos.
+<div>
+Ejemplo: Continuando con el conjunto de datos de edades, la frecuencia relativa de la edad 25 se calcula dividiendo la frecuencia absoluta (3) entre el tamaño total del conjunto (7):
+<div>
+Frecuencia Relativa (25) = 3 / 7 ≈ 0.4286 (redondeado a cuatro decimales)
+<div>
+Esto significa que el 42.86% de las edades en el conjunto son iguales a 25.
+<div>
+**Frecuencia Acumulada (FAc)**:
+
+La frecuencia acumulada de un valor es la suma de las frecuencias absolutas de todos los valores iguales o menores que ese valor en el conjunto de datos.
+<div>
+Ejemplo: Usando el mismo conjunto de datos de edades, si queremos calcular la frecuencia acumulada de 30, sumamos las frecuencias absolutas de 25 (3 veces) y 30 (2 veces):
+<div>
+Frecuencia Acumulada (30) = Frecuencia Absoluta (25) + Frecuencia Absoluta (30) = 3 + 2 = 5
+<div>
+Esto significa que hay un total de 5 personas cuyas edades son iguales o menores a 30 en el conjunto.
+<div>
+**Frecuencia Relativa Acumulada (FRac)**:
+
+La frecuencia relativa acumulada de un valor es la suma de las frecuencias relativas de todos los valores iguales o menores que ese valor en el conjunto de datos.
+<div>
+Ejemplo: Siguiendo con el conjunto de datos de edades, si deseamos calcular la frecuencia relativa acumulada de 30, primero calculamos las frecuencias relativas de 25 y 30 como lo hicimos antes:
+<div>
+Frecuencia Relativa (25) = 0.4286
+<div>
+Frecuencia Relativa (30) = 0.2857
+<div>
+Luego, sumamos estas frecuencias relativas:
+<div>
+Frecuencia Relativa Acumulada (30) = Frecuencia Relativa (25) + Frecuencia Relativa (30) = 0.4286 + 0.2857 = 0.7143
+<div>
+Esto significa que el 71.43% de las edades en el conjunto son iguales o menores a 30.
+<div>
+Estos conceptos son fundamentales para resumir y analizar datos, ya que proporcionan información sobre la distribución de los valores en un conjunto de datos y ayudan a comprender mejor su estructura y características.
+<div>
+A partir de los anteriores conceptos podemos construir una *Tabla de Frecuencias* la cual es una herramienta utilizada en estadística descriptiva para resumir y presentar de manera organizada la información sobre la frecuencia de ocurrencia de diferentes valores en un conjunto de datos. Esto junto con lo anterior se puede ilustrar en el software Estadístico R de la siguiente manera.
+
+
+```{r,warning=F,message=F}
+#El ejercicio realizado previamente puede ilustrarse en R de la siguiente manera:
+x<- c(25, 30, 25, 35, 40, 25, 30) #Inicializó un vector con los datos
+Tabla<- table(Edad=x); Tabla #Frecuencias Absolutas
+Tabla_prop<- prop.table(Tabla);Tabla_prop #Frecuencias Relativas
+Tabla_acumulada<- cumsum(Tabla);Tabla_acumulada #Frecuencias Absolutas acumuladas
+Tabla_prop_acum<- cumsum(Tabla_prop);Tabla_prop_acum
+TablaFrecuencias<- cbind(Tabla,Tabla_prop,Tabla_acumulada,Tabla_prop_acum) #Agrupar las tablas para crear una sola tabla resumen
+
+colnames(TablaFrecuencias)<- c("Frecuencia Abs","Frecuencia Rel","Frecuencia Abs Acum","Frecuencia Rel Acum") #Cambiar nombre de las columnas
+round(TablaFrecuencias,2) #Aproximar a 2 decimales
+
+```
+
