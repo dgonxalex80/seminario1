@@ -453,6 +453,53 @@ es el promedio de los dos valores centrales.
 frecuencia en un conjunto de datos. Puede haber una moda (un valor que
 se repite con más frecuencia) o múltiples modas si varios valores tienen
 la misma frecuencia máxima.</p>
+<pre class="r"><code>#Podemos obtener estos indicadores de la siguiente manera 
+mode &lt;- function(x) {
+   return(as.numeric(names(which.max(table(x)))))
+} #Creando una función para la moda
+print(&quot;Media&quot;)</code></pre>
+<pre><code>## [1] &quot;Media&quot;</code></pre>
+<pre class="r"><code>mean(Cocentracion)</code></pre>
+<pre><code>## [1] 70.66667</code></pre>
+<pre class="r"><code>print(&quot;Mediana&quot;)</code></pre>
+<pre><code>## [1] &quot;Mediana&quot;</code></pre>
+<pre class="r"><code>median(Cocentracion)</code></pre>
+<pre><code>## [1] 70</code></pre>
+<pre class="r"><code>print(&quot;Moda&quot;)</code></pre>
+<pre><code>## [1] &quot;Moda&quot;</code></pre>
+<pre class="r"><code>mode(Cocentracion)</code></pre>
+<pre><code>## [1] 35</code></pre>
+<strong>Medidas de dispersión </strong> Las medidas de dispersión son
+estadísticas que proporcionan información sobre la variabilidad o
+dispersión de un conjunto de datos. Ayudan a entender cuánto se
+extienden los valores alrededor de una medida central (como la media) en
+el conjunto de datos. Las principales medidas de dispersión incluyen:
+<div>
+<p><strong>Rango</strong>: El rango es la diferencia entre el valor
+máximo y el valor mínimo en un conjunto de datos. Es la medida de
+dispersión más simple y fácil de calcular.</p>
+<strong>Desviación Estándar (SD)</strong>: La desviación estándar mide
+la dispersión de los valores con respecto a la media. Una desviación
+estándar más grande indica una mayor dispersión. Se calcula como la raíz
+cuadrada de la varianza.
+<div>
+<strong>Varianza</strong>: La varianza es una medida de la dispersión
+que calcula la media de los cuadrados de las diferencias entre cada
+valor y la media. Una varianza más grande indica una mayor dispersión.
+La varianza poblacional se denota como <span class="math display">\[\sigma^2\]</span>, y la muestral se denota como
+<span class="math inline">\(s^2\)</span>, tiene como expresión:
+<div>
+
+<p><span class="math display">\[\sigma^2=\frac{\sum_{i}^{n}({x_{i}-\bar{x}})}{n}\]</span>
+<span class="math display">\[S^2=\frac{\sum_{i}^{n}({x_{i}-\bar{x}})}{n-1}\]</span>
+Rango Intercuartil (RIC): El rango intercuartil es la diferencia entre
+el tercer cuartil (Q3) y el primer cuartil (Q1). Se utiliza para medir
+la dispersión en la parte central de un conjunto de datos, ignorando los
+valores extremos.</p>
+<p>Coeficiente de Variación (CV): El coeficiente de variación es una
+medida relativa de la dispersión que compara la desviación estándar con
+la media. Se expresa como un porcentaje y se utiliza para comparar la
+dispersión en diferentes conjuntos de datos. Su expresión es: <span class="math display">\[CV=\frac{SD}{|\bar{x}|}*100\]</span></p>
 </div>
 
 
