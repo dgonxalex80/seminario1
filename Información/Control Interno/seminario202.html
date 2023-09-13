@@ -441,7 +441,7 @@ todos los valores en un conjunto de datos. Se calcula sumando todos los
 valores y dividiendo la suma por el número total de valores. La media se
 denota como:
 <div>
-<span class="math inline">\(\bar{x}=\frac{\sum_{i}^{n}x_{i}}{n}\)</span>
+<span class="math display">\[\bar{x}=\frac{\sum_{i}^{n}x_{i}}{n}\]</span>
 <div>
 <strong>Mediana</strong>: La mediana es el valor que se encuentra en el
 punto medio de un conjunto de datos cuando los valores están ordenados
@@ -559,6 +559,16 @@ dispersión. Ayudan a caracterizar la simetría, la concentración y la
 forma de la distribución, lo que puede ser importante en análisis
 estadísticos más avanzados y en la comprensión de la naturaleza de los
 datos.</p>
+<pre class="r"><code>#Medidas de forma en R
+library(moments)
+print(&quot;Asimetría&quot;)</code></pre>
+<pre><code>## [1] &quot;Asimetría&quot;</code></pre>
+<pre class="r"><code>skewness(Cocentracion)</code></pre>
+<pre><code>## [1] -0.1133882</code></pre>
+<pre class="r"><code>print(&quot;Curtosis&quot;)</code></pre>
+<pre><code>## [1] &quot;Curtosis&quot;</code></pre>
+<pre class="r"><code>kurtosis(Cocentracion)</code></pre>
+<pre><code>## [1] 1.886922</code></pre>
 </div>
 
 
