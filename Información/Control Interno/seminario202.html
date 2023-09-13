@@ -486,7 +486,7 @@ cuadrada de la varianza.
 <strong>Varianza</strong>: La varianza es una medida de la dispersión
 que calcula la media de los cuadrados de las diferencias entre cada
 valor y la media. Una varianza más grande indica una mayor dispersión.
-La varianza poblacional se denota como <span class="math display">\[\sigma^2\]</span>, y la muestral se denota como
+La varianza poblacional se denota como <span class="math inline">\(\sigma^2\)</span>, y la muestral se denota como
 <span class="math inline">\(s^2\)</span>, tiene como expresión:
 <div>
 
@@ -500,6 +500,65 @@ valores extremos.</p>
 medida relativa de la dispersión que compara la desviación estándar con
 la media. Se expresa como un porcentaje y se utiliza para comparar la
 dispersión en diferentes conjuntos de datos. Su expresión es: <span class="math display">\[CV=\frac{SD}{|\bar{x}|}*100\]</span></p>
+<pre class="r"><code>#Podemos  estas medidas de la siguiente manera 
+print(&quot;Varianza&quot;)</code></pre>
+<pre><code>## [1] &quot;Varianza&quot;</code></pre>
+<pre class="r"><code>var(Cocentracion)</code></pre>
+<pre><code>## [1] 422.8095</code></pre>
+<pre class="r"><code>print(&quot;Desviación Estandar&quot;)</code></pre>
+<pre><code>## [1] &quot;Desviación Estandar&quot;</code></pre>
+<pre class="r"><code>sd(Cocentracion)</code></pre>
+<pre><code>## [1] 20.56233</code></pre>
+<pre class="r"><code>print(&quot;Coef Var&quot;)</code></pre>
+<pre><code>## [1] &quot;Coef Var&quot;</code></pre>
+<pre class="r"><code>sd(Cocentracion)/abs(mean(Cocentracion))</code></pre>
+<pre><code>## [1] 0.2909764</code></pre>
+<pre class="r"><code>print(&quot;Rango&quot;)</code></pre>
+<pre><code>## [1] &quot;Rango&quot;</code></pre>
+<pre class="r"><code>range(Cocentracion)</code></pre>
+<pre><code>## [1]  35 100</code></pre>
+<strong>Medidas de forma</strong> Las medidas de forma, a veces llamadas
+medidas de asimetría y curtosis, se utilizan para describir la forma o
+la distribución de un conjunto de datos. A continuación, se presentan
+algunas de las medidas de forma más comunes:
+<div>
+<strong>Asimetría (Skewness)</strong>: La asimetría mide la falta de
+simetría en la distribución de los datos. Indica si los datos están
+sesgados hacia la izquierda (negativo), hacia la derecha (positivo) o si
+tienen una distribución simétrica (cero). Un valor de asimetría igual a
+cero indica simetría perfecta.
+<div>
+<strong>Asimetría positiva (derecha)</strong>: La cola de la
+distribución se extiende más hacia la derecha y la mayoría de los datos
+se concentran en valores más bajos que la media.
+<div>
+<strong>Asimetría negativa (izquierda)</strong>: La cola de la
+distribución se extiende más hacia la izquierda y la mayoría de los
+datos se concentran en valores más altos que la media.
+<div>
+<strong>Curtosis (Kurtosis)</strong>: La curtosis mide la concentración
+de los datos alrededor de la media y la forma de las colas de la
+distribución. Indica si los datos tienen colas pesadas (mayor
+concentración en los valores extremos) o colas ligeras (menos
+concentración en los valores extremos).
+<div>
+<strong>Curtosis positiva (leptocúrtica)</strong>: Indica una mayor
+concentración de datos alrededor de la media con colas pesadas. Esto
+puede indicar una distribución más puntiaguda en el centro.
+<div>
+<strong>Curtosis negativa (platicúrtica)</strong>: Indica una menor
+concentración de datos alrededor de la media con colas ligeras. Esto
+puede indicar una distribución más aplanada en el centro.
+<div>
+<strong>Curtosis igual a cero (mesocúrtica)</strong>: Indica una
+distribución normal con colas moderadas.
+<div>
+<p>Estas medidas de forma proporcionan información adicional sobre la
+distribución de los datos más allá de las medidas de tendencia central y
+dispersión. Ayudan a caracterizar la simetría, la concentración y la
+forma de la distribución, lo que puede ser importante en análisis
+estadísticos más avanzados y en la comprensión de la naturaleza de los
+datos.</p>
 </div>
 
 

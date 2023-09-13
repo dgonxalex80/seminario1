@@ -94,3 +94,43 @@ Rango Intercuartil (RIC): El rango intercuartil es la diferencia entre el tercer
 Coeficiente de Variación (CV): El coeficiente de variación es una medida relativa de la dispersión que compara la desviación estándar con la media. Se expresa como un porcentaje y se utiliza para comparar la dispersión en diferentes conjuntos de datos. Su expresión es:
 $$CV=\frac{SD}{|\bar{x}|}*100$$
 
+```{r,message=F,warning=F}
+#Podemos  estas medidas de la siguiente manera 
+print("Varianza")
+var(Cocentracion)
+print("Desviación Estandar")
+sd(Cocentracion)
+print("Coef Var")
+sd(Cocentracion)/abs(mean(Cocentracion))
+print("Rango")
+range(Cocentracion)
+
+```
+**Medidas de forma**
+Las medidas de forma, a veces llamadas medidas de asimetría y curtosis, se utilizan para describir la forma o la distribución de un conjunto de datos. A continuación, se presentan algunas de las medidas de forma más comunes:
+<div>
+**Asimetría (Skewness)**: La asimetría mide la falta de simetría en la distribución de los datos. Indica si los datos están sesgados hacia la izquierda (negativo), hacia la derecha (positivo) o si tienen una distribución simétrica (cero). Un valor de asimetría igual a cero indica simetría perfecta.
+<div>
+**Asimetría positiva (derecha)**: La cola de la distribución se extiende más hacia la derecha y la mayoría de los datos se concentran en valores más bajos que la media.
+<div>
+**Asimetría negativa (izquierda)**: La cola de la distribución se extiende más hacia la izquierda y la mayoría de los datos se concentran en valores más altos que la media.
+<div>
+**Curtosis (Kurtosis)**: La curtosis mide la concentración de los datos alrededor de la media y la forma de las colas de la distribución. Indica si los datos tienen colas pesadas (mayor concentración en los valores extremos) o colas ligeras (menos concentración en los valores extremos).
+<div>
+**Curtosis positiva (leptocúrtica)**: Indica una mayor concentración de datos alrededor de la media con colas pesadas. Esto puede indicar una distribución más puntiaguda en el centro.
+<div>
+**Curtosis negativa (platicúrtica)**: Indica una menor concentración de datos alrededor de la media con colas ligeras. Esto puede indicar una distribución más aplanada en el centro.
+<div>
+**Curtosis igual a cero (mesocúrtica)**: Indica una distribución normal con colas moderadas.
+<div>
+Estas medidas de forma proporcionan información adicional sobre la distribución de los datos más allá de las medidas de tendencia central y dispersión. Ayudan a caracterizar la simetría, la concentración y la forma de la distribución, lo que puede ser importante en análisis estadísticos más avanzados y en la comprensión de la naturaleza de los datos.
+```{r,warning=F,message=F}
+#Medidas de forma en R
+library(moments)
+print("Asimetría")
+skewness(Cocentracion)
+print("Curtosis")
+kurtosis(Cocentracion)
+
+```
+
