@@ -59,7 +59,7 @@ Las medidas de tendencia central, también conocidas como medidas de centralizac
 <div>
 **Media Aritmética**: La media aritmética es el promedio de todos los valores en un conjunto de datos. Se calcula sumando todos los valores y dividiendo la suma por el número total de valores. La media se denota como:
 <div>
-$\bar{x}=\frac{\sum_{i}^{n}x_{i}}{n}$
+$$\bar{x}=\frac{\sum_{i}^{n}x_{i}}{n}$$
 <div>
 **Mediana**: La mediana es el valor que se encuentra en el punto medio de un conjunto de datos cuando los valores están ordenados de menor a mayor (o viceversa). Si hay un número impar de valores, la mediana es el valor central. Si hay un número par de valores, la mediana es el promedio de los dos valores centrales.
 <div>

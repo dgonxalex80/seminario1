@@ -1,0 +1,43 @@
+---
+title: "seminario203"
+author: "Felipe Palomino"
+date: "2023-08-24"
+output: html_document
+---
+
+</br></br>
+
+## **Media muestral, proporción muestral y varianza muestral**
+La media de una distribución poblacional suele ser denotada por el símbolo $\mu$ sin embargo conocer toda la población en diversas ocasiones tiende a ser un proceso muy díficil de realizar, por motivos de logística, tiempo, dinero o en general situaciones fortuitas. De esta manera ocurre lo mismo para el párametro de la población representado por el símbolo $p$ y la varianza $\sigma^2$. De esta manera dentro de los procesos de la estadística inferencial aparecen estimadores muestrales para estos valores.
+<div>
+## Media muestral ##
+Denotada por la expresión:
+$$\bar{x}=\frac{\sum_{i}^{n}x_{i}}{n}$$
+<div>
+## Proporción muestral ##
+Antes de definir la proporción definamos un concepto fundamental para entender este párametro y son los "éxitos", el cual nos denota un evento de interés como por ejemplo número de mujeres en una población, número de personas que contraen una enfermedad y la razón de estas dentro de una población total es lo que se denota como proporción:
+$$\hat{p}=\frac{\text{Número de exitos}}{Total}$$
+<div>
+## Varianza muestral ##
+Denotada por la expresión:
+$$S^2=\frac{\sum_{i}^{n}({x_{i}-\bar{x}})}{n-1}$$
+<div>
+Pensemos ahora en un ejercicio aplicativo para calcular estos estimadores muestrales bajo un ejercicio práctico en R. Tendremos como ejemplo las edades de las personas en una empresa del sur de Cali. Las cuáles son:
+<div>
+18, 20, 24, 25, 30, 32, 18, 18, 22, 21, 21, 25, 19, 18, 17
+
+```{r,echo=T,message=F}
+Edad<-c(18 ,20, 24 ,25, 30 ,32 ,18 ,18, 22, 21 ,21 ,25 ,19, 18, 17)#Inicializamos los datos
+#Media
+print("Media")
+mean(Edad)
+#Varianza
+print("Varianza")
+var(Edad)
+#Pensemos en un ejercicio enfocado en proporción. ¿Que porcentaje de las personas tienen mas de 25 años
+#Operador lógico
+Edad>20 #Seleccionamos los valores de la edad que son mayores a 20
+#Este operador True false si lo sumamos obtenemos el número de personas mayores a 20, entonces solo nos faltaría dividir este resultado entre el total de datos
+print("Proporción")
+sum(Edad>20)/length(Edad)
+```
