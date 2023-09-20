@@ -1,0 +1,51 @@
+---
+title: "seminario204"
+author: "Felipe Palomino"
+date: "2023-08-24"
+output: html_document
+---
+
+</br></br>
+
+## **Modelos de probabilidad**
+#** Distribución Binomial **
+La distribución binomial es un modelo de probabilidad discreta que cuantifica las posibilidades de obtener uno de dos resultados en un conjunto de pruebas repetidas. Cada resultado tiene una probabilidad que no supera 1 y no es negativa. Estas pruebas se caracterizan por tener solo dos resultados posibles, como en el lanzamiento de una moneda (cara o cruz), el lanzamiento de una moneda, si nuestro interés radica en observar solo una cara, etc. De aquí la noción de éxito o fracaso.
+<div>
+Cada experimento es independiente y no afecta las probabilidades futuras; en cada intento, la probabilidad de obtener uno de los dos resultados es constante. Por ejemplo, si arrojamos un dado equilibrado, la probabilidad de obtener un número par (2, 4 u 6) o impar (1, 3 u 5) es del 50\%, y esta probabilidad se mantiene constante en cada lanzamiento.
+<div>
+En la distribución binomial, se emplean tres variables:
+<div>
+"n" representa el número de veces que se realiza el experimento.
+<div>
+"p" es la probabilidad de obtener uno de los dos resultados, que llamamos "éxito."
+<div>
+"q" es la probabilidad del otro resultado, que llamamos "fracaso." Dado que solo hay dos posibilidades, p + q debe ser igual a 1, lo que implica que p = 1 - q.
+<div>
+Para utilizar este modelo, primero debemos definir "p." Por ejemplo, en el caso del dado, podríamos definir "éxito" como obtener un número par y, en consecuencia, "q" sería obtener un número impar.
+<div>
+Otro ejemplo: Supongamos que deseamos calcular la probabilidad de encontrar un taxi libre al apresurarnos por la calle en un día lluvioso, donde es probable que estén ocupados. Asignamos una probabilidad del 15% (0,15) a que el taxi esté libre, lo que significa que "p" es 0,15 y, por lo tanto, "q" (la probabilidad de estar ocupado) es 1 - 0,15, es decir, 0,85 o 85% en términos porcentuales.
+<div>
+De esta manera, podemos utilizar estos porcentajes para determinar la probabilidad de que un resultado específico ocurra un número determinado de veces en nuestras pruebas repetidas.
+<div>
+La función de masa de esta distribución es:
+$$P(X=x)= \binom{n}{k}=p^n(q)^{n-x}$$
+<div>
+Sus momentos son:
+<div>
+$$E[X]=np; Var[X]=npq$$
+<div>
+```{r,warning=F,message=F}
+# En R podemomos obtener esta distribución de la siguiente manera
+n<- 10 #Tamaño de muestra
+p<- 0.5 #Probabilidad de éxito
+dbinom(1,n,p)# Función de masa
+pbinom(2,n,p)#Probabilidad acumualada hasta un punto
+qbinom(0.5,n,p) # Cuantiles
+rbinom(10,n,p) #Números aleatorios
+par(mfrow=c(2,2))
+plot(1:10,dbinom(1:10,n,p),pch=19,panel.first=grid(),main="Función de Densidad distribución binomial con P=0.5")
+plot(1:10,dbinom(1:10,n,0.1),pch=19,panel.first=grid(),main="Función de Densidad distribución binomial con P=0.1")
+plot(1:10,dbinom(1:10,n,0.9),pch=19,panel.first=grid(),main="Función de Densidad distribución binomial con P=0.9")
+plot(1:10,dbinom(1:10,n,0.7),pch=19,panel.first=grid(),main="Función de Densidad distribución binomial con P=0.7")
+```
+
