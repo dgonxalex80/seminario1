@@ -48,4 +48,29 @@ plot(1:10,dbinom(1:10,n,0.1),pch=19,panel.first=grid(),main="Función de Densida
 plot(1:10,dbinom(1:10,n,0.9),pch=19,panel.first=grid(),main="Función de Densidad distribución binomial con P=0.9")
 plot(1:10,dbinom(1:10,n,0.7),pch=19,panel.first=grid(),main="Función de Densidad distribución binomial con P=0.7")
 ```
-
+<div>
+**Distribución Poisson:**
+<div>
+La distribución de Poisson es una distribución de probabilidad discreta que se aplica a las ocurrencias de algún evento durante un periodo determinado. Es decir, es una distribución de probabilidad discreta en la que solo es necesario conocer los eventos y cuál es su frecuencia media de ocurrencia para poder conocer la probabilidad de que ocurran.
+<div>
+Una distribución es discreta cuando se toma un número de valor finito, mientras que las continuas usan un número infinito de valores.
+<div>
+Es adecuada para procesos experimentales que describen situaciones. como:
+<div>
+*Esta distribución se puede hacer derivar de un proceso experimental de observación en el que tengamos las siguientes características.
+<div>
+*Se observa la realización de hechos de cierto tipo durante un cierto periodo de tiempo o a lo largo de un espacio de observación.
+<div>
+*Los hechos a observar tienen naturaleza aleatoria ; pueden producirse o no de una manera no determinística.
+<div>
+*La probabilidad de que se produzcan un número x de éxitos en un intervalo de amplitud t no depende del origen del intervalo (Aunque, sí de su amplitud).
+<div>
+*La probabilidad de que ocurra un hecho en un intervalo infinitésimo es prácticamente proporcional a la amplitud del intervalo.
+<div>
+*La probabilidad de que se produzcan 2 o más hechos en un intervalo infinitésimo es un infinitésimo de orden superior a dos.
+<div>
+Cuenta con una función de masa:
+$$P(X=x)=\frac{e^{-\lambda}\lambda^x}{x!}$$
+Su esperanza y varianza:
+$$E[X]=Var[X]=\lambda$$
+##** Distribución Normal **
