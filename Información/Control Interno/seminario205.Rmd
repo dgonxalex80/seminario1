@@ -1,0 +1,25 @@
+---
+title: "seminario204"
+author: "Felipe Palomino"
+date: "2023-08-24"
+output: html_document
+---
+
+</br></br>
+
+## **Control de calidad en estadística**
+<div>
+El control de calidad desempeña un papel esencial en la toma de decisiones empresariales y en la producción de bienes y servicios de alta calidad. En el ámbito de la estadística, el control de calidad se refiere al proceso de supervisar, evaluar y mejorar continuamente los procesos y productos para garantizar que cumplan con los estándares y especificaciones establecidos. Es una disciplina crítica en la gestión de la calidad y se aplica en una amplia variedad de industrias, desde manufactura hasta servicios.
+<div>
+**Objetivos del Control de Calidad**
+<div>
+
+El control de calidad en estadística tiene varios objetivos fundamentales:
+<div>
+Minimizar la variabilidad: Busca reducir la variabilidad en los procesos de producción o en los datos recopilados. La variabilidad excesiva puede llevar a productos defectuosos o a conclusiones erróneas en los análisis estadísticos.
+<div>
+Mejorar la precisión: A través del control de calidad, se busca mejorar la precisión en la medición y producción. Esto se logra identificando y corrigiendo errores sistemáticos o aleatorios.
+<div>
+Aumentar la eficiencia: El control de calidad eficiente ahorra tiempo y recursos al eliminar la necesidad de retrabajo y ajustes constantes.
+<div>
+Cumplir con estándares y regulaciones: En muchas industrias, es necesario cumplir con estándares y regulaciones estrictas. El control de calidad garantiza que se cumplan estas normativas.
